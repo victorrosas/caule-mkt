@@ -17,5 +17,10 @@ export const Button = styled(Link)`
   border-radius: 20px;
   font-size: ${({ big }) => (big ? '20px' : '18px')};
   line-height: 25px;
-  color: ${({ primary }) => (primary ? 'rgb(255, 255, 255)' : 'rgb(34, 33, 55)')}
+  color: ${({ primary }) => (primary ? 'rgb(255, 255, 255)' : 'rgb(34, 33, 55)')};
+  transition: all 0.2s;
+
+  &:hover {
+    
+  }
 `;

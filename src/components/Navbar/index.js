@@ -8,20 +8,15 @@ import { Button } from '../Button/Button';
 const Navbar = () => {
   return (
     <Nav>
-      <Logo>
-          <img src={logoimg} alt="Caule Digital" />
-      </Logo>
+      <Logo to="/" />
       <MenuBars />
       <NavMenu>
         {menuData.map((item, index) => (
-          <NavMenuLinks to={item.link} key={index}>
+          <NavMenuLinks to={item.link} key={index} primary={true}>
             {item.title}
           </NavMenuLinks>
         ))}
       </NavMenu>
-      <NavBtn>
-        <Button to="/contato" primary={true}>Contato</Button>
-      </NavBtn>
     </Nav>
   )
 }
